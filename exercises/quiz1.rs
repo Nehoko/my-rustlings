@@ -11,9 +11,8 @@
 // fn ..... {
 
 fn calculate_apple_price(apple_count: i32) -> i32 {
-    let mut cost = 2;
-    if apple_count > 40 { cost = 1 }
-    return apple_count * cost;
+    let cost = if apple_count > 40 {1} else {2};
+    apple_count * cost
 }
 
 // Don't modify this function!
